@@ -13,12 +13,16 @@ body{
 	flex-direction: column;
 	font-family: monospace;
 	justify-content: space-between;
+	color:#333333;
 }
 
 /* media and css for mobile device */
-@media screen and (max-width: 960px) {
+@media screen and (min-width:200px)and (max-width: 960px) {
+	body{
+		min-width: 280px;
+		margin: 5% 7%;
+	}
 	.error-header{
-		padding: 20px 20px;
 		font-size: 17px;
 	}
 
@@ -28,9 +32,9 @@ body{
 	}
 
 	.error-image{
-		max-width: 300px;
-		margin: 3em auto;
-		padding: 30px;
+		min-width: 200px;
+		height: auto;
+		margin: 15% 5%;
 	}
 
 	.error-image img{
@@ -42,32 +46,30 @@ body{
 		flex-direction: column;
 		justify-content: space-between;
 		margin-bottom: 10vh;
-		padding: 0 20px;
 	}
 
 	.error-text h2{
-		font-size: 35px;
+		font-size: 37px;
 	}
 
 	.error-text p{
-		margin: 5vh 0;
-		
-		font-size: 13px;
+		margin: 4vh 0 8vh 0;
+		font-size: 14px;
 		width: 80%;
 	}
 
 	.error-text a{
-		background-color: black;
+		background-color: #000000;
 		max-width: fit-content;
-		padding: 15px 30px;
+		padding: 12px 20px;
 		color: white;
+		font-size: 12px;
 	}
 
 	.error-footer{
 		font-weight: bold;
 		text-align: center;
-		color: black;
-		margin-bottom: 3vh;
+		margin-bottom: 2%;
 	}
 }
 
@@ -121,13 +123,13 @@ body{
 		width: fit-content;
 		color: white;
 		text-transform: uppercase;
-		background-color: black;
+		background-color: #333333;
 		padding: 15px 20px;
 	}
 	
 	.error-text a:hover{
 		cursor: pointer;
-		background-color: #333333;
+		background-color: #000000;
 	}
 
 	.error-footer{
